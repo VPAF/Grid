@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Grid"
+             xmlns:customRenderers="clr-namespace:Grid.CustomRenderers;assembly=Grid"
+             x:Class="Grid.MainPage">
+
+    
+
+    <Grid BackgroundColor="#354242" Padding="40" RowSpacing="10" ColumnSpacing="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Text="123456" HorizontalOptions="Center" FontSize="50" BackgroundColor="#ffffff"/>
+        <customRenderers:CustomButton Grid.Row="1" Grid.Column="0" Text="1" FontSize="30" BackgroundColor="#ffffff" BorderRadius="30"/>
+        <customRenderers:CustomButton Grid.Row="1" Grid.Column="1" Text="2" FontSize="30" BackgroundColor="#ffffff" BorderRadius="30"/>
+        <customRenderers:CustomButton Grid.Row="1" Grid.Column="2" Text="3" FontSize="30" BackgroundColor="#ffffff" BorderRadius="30"/>
+        <customRenderers:CustomButton Grid.Row="2" Grid.Column="0" Text="4" FontSize="30" BackgroundColor="#ffffff" BorderRadius="30"/>
+        <customRenderers:CustomButton Grid.Row="2" Grid.Column="1" Text="5" FontSize="30" BackgroundColor="#ffffff" BorderRadius="30"/>
+        <customRenderers:CustomButton Grid.Row="2" Grid.Column="2" Text="6" FontSize="30" BackgroundColor="#ffffff" BorderRadius="30"/>
+        <customRenderers:CustomButton Grid.Row="3" Grid.Column="0" Text="7" FontSize="30" BackgroundColor="#ffffff" BorderRadius="30"/>
+        <customRenderers:CustomButton Grid.Row="3" Grid.Column="1" Text="8" FontSize="30" BackgroundColor="#ffffff" BorderRadius="30"/>
+        <customRenderers:CustomButton Grid.Row="3" Grid.Column="2" Text="9" FontSize="30" BackgroundColor="#ffffff" BorderRadius="30"/>
+        <customRenderers:CustomButton Grid.Row="4" Grid.Column="1" Text="0" FontSize="30" BackgroundColor="#ffffff" BorderRadius="30"/>
+        <customRenderers:CustomButton Grid.Row="5" Grid.Column="0" FontSize="30" Text="DIAL" BackgroundColor="#96ca2d" BorderRadius="30" Grid.ColumnSpan="3"/>
+        
+        
+    </Grid>
+</ContentPage>

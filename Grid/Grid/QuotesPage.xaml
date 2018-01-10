@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Grid.QuotesPage">
+    <ContentPage.Padding>
+        <OnPlatform	x:TypeArguments="Thickness" iOS="0,	20,	0,	0" Android="20,	30,	20,	20"	/>
+    </ContentPage.Padding>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label	Text="{Binding Source={x:Reference	MySlider},Path=Value,StringFormat='Value	is	{0:F2}'}"	/>
+            <!--<Label	BindingContext="{x:Reference	MySlider}" Text="{Binding	Value}" FontSize="{Binding	Value}"	/>-->
+            <Label	BindingContext="{x:Reference	MySlider}" Text="TEST" FontSize="{Binding	Value}"	/>
+            <Slider x:Name="MySlider"  Maximum="50" Minimum="16"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
